@@ -97,6 +97,10 @@ table {
         line-height: normal;
     }
 
+    img {
+        width: 50%;
+    }
+
     header {
         background-color: var(--midnight-blue);
         color: var(--soft-white);
