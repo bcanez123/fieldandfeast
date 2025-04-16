@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -57,7 +55,217 @@ table {
         --soft-white: #FAF9F6;
     }
     /* GLOBAL STYLES (mobile first/small) */
+    
+    nav {
+        background-color: var(--champagne-gold);
+        padding: 20px;
+    }
+    
+    nav ul { 
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+        list-style-type: none;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--dark-charcoal);
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 19px;
+        font-weight: bold;
+        line-height: normal;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    header {
+        background-color: var(--midnight-blue);
+        color: var(--soft-white);
+        text-align: center;
+        line-height: normal;
+        padding: 30px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    figure img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+        height: auto;
+        display: block;
+    }
+
+    figcaption {
+        padding: 15px;
+        text-align: center;
+        font-style: italic;
+        display: block;
+        box-shadow: 5px 5px 8px lightgray;
+        border-radius: 0px 0px 5px 5px;
+        
+    }
+
+    figure {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        background-color: var(--midnight-blue);
+        color: var(--soft-white);
+        padding-top: 100px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .monthlyBasketList {
+        font-size: 14px;
+    }
+    .fieldAndFeast {
+        font-size:17px;
+        font-style: italic;
+    }
+
+    .artisanProvisions{
+        background-color: var(--olive-green);
+        color: var(--soft-white);
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: normal;
+        box-shadow: 10px 10px 5px;
+
+    }
+
+    .exclusiveDiningExperience{
+        background-color: var(--olive-green);
+        color: var(--soft-white);
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: normal;
+        box-shadow: 10px 10px 5px;
+    }
+
+    .monthlyBasket{
+        background-color: var(--olive-green);
+        color: var(--soft-white);
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: normal;
+        box-shadow: 10px 10px 5px; 
+    }
+
+    .monthlyBasketList {
+        list-style-position: inside;
+
+    }
+
+    .line {
+        color: var(--champagne-gold);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #viewOurFullGallery {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .viewOurGallery {
+        background-color: var(--olive-green);
+        color: var(--soft-white);
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+
+    }
+
+    .mail {
+        color: var(--champagne-gold);
+    }
+
+    .instagram {
+        color: var(--champagne-gold);
+        margin-top: 40px;
+    }
+
+    .facebook {
+        color: var(--champagne-gold);
+    }
+
+
+
 
     /* MEDIA QUERY (medium) */
     /* MEDIA QUERY (large) */
     /* MEDIA QUERY (xl) */
+
+    @media screen and (min-width: 600px) {
+        .offeringsGrid {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+        
+        .monthlyBasket{
+            grid-column: 1 / span 2;
+            gap: 10px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+        }
+    }
+    
+
+    @media screen and (min-width: 900px) {
+        .gallery {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .gallery {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+        }
+        main {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    }
+
+    
